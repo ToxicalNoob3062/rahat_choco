@@ -1,0 +1,42 @@
+////////////////////////////////ARCHIVED///////////////////////////////////// 
+
+//(Code block slow...O(n))
+void keyPressed() {
+    //selects the eligible cell for a key press to act on!
+    for (ChocoCell cell : chocolateBox.box) {
+        //if cell is not active or hovered then the key changes are not for this cell!
+        if (!cell.containsCursor()) continue;
+        if (key == ' ') cell.switchVisibility();
+        //if cell is not visible but active(hovered) then also that active cell should not recieve keyboard changes!
+        if (!cell.visible) continue;
+        //perform the operation in desired cell according to the key pressed!
+        switch(key) {
+            //next flavor
+            case'a':
+            cell.switchFlavor(true);
+            break;
+            //prev flavor
+            case's':
+            cell.switchFlavor(false);
+            break;
+            //next shape
+            case'd':
+            cell.switchShape(true);
+            break;
+            //prev shape
+            case'f':
+            cell.switchShape(false);
+            break;
+        };
+    }
+}
+
+//slow time complexity O(n)
+void draw() {
+    background(64,64,64);
+    //lets draw the cells and the chocolates inside them present in the chocolate box
+    for (ChocoCell cell : chocolateBox.box) {
+        //here drawCell function is smart enough to autocheck the cursor presence inside cell O(1)time!
+        cell.drawCell();
+    };
+}
