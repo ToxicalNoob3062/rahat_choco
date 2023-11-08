@@ -53,3 +53,7 @@ The `ChocoCell` class represents an individual chocolate cell and manages its pr
 - Because explaining mathematical concepts in depth is not my responsibility here as I am not a math teacher!
 
 Enjoy the chocolatey experience! 🍬🎉
+
+Give a star⭐️ for this [project](https://github.com/ToxicalNoob3062/rahat_choco) if you liked it!
+
+![Pattern Image](pattern.png)
