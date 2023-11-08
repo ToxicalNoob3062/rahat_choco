@@ -2,6 +2,14 @@
 
 Welcome to the Chocolate Box Simulation in Processing! 🍫 This interactive sketch lets you play with virtual chocolates by changing their flavors, shapes, and visibility.
 
+## Disclaimer ⚠️
+
+- If you're a TA👨‍🏫 then checking my code from this [link](https://github.com/ToxicalNoob3062/rahat_choco) will be much more comfortable for you!
+
+- I didn't explain the mathematical functions in depth! But i commented out what those functions are computing!
+
+- Because explaining mathematical concepts in depth is not my responsibility here as I am not a math teacher!
+
 ## Code Structure 🧱
 
 The code is organized into two main classes: `ChocoBox` and `ChocoCell`. Here's a breakdown of the structure:
@@ -46,11 +54,6 @@ The `ChocoCell` class represents an individual chocolate cell and manages its pr
 
 - I don't think there is more optimization possible for this super-optimized code!
 - I don't be buggy in small software like this!
-
-## Disclaimer ⚠️
-
-- I didn't explain the mathematical functions in depth! But i commented out what those functions are computing!
-- Because explaining mathematical concepts in depth is not my responsibility here as I am not a math teacher!
 
 Enjoy the chocolatey experience! 🍬🎉
 
