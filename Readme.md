@@ -43,10 +43,10 @@ The `ChocoCell` class represents an individual chocolate cell and manages its pr
 
   - `Hover` on the desired cell to select it on the grid!
   - Press `Space` to toggle visibility.
-  - Press `a` to select the next flavor.
-  - Press `s` to select the previous flavor.
-  - Press `d` to select the next shape.
-  - Press `f` to select the previous shape.
+  - Press `s` to select the next flavor.
+  - Press `a` to select the previous flavor.
+  - Press `f` to select the next shape.
+  - Press `d` to select the previous shape.
 
 - The `timeManager` related functions handles the timing for these interactions to prevent rapid changes.
 
