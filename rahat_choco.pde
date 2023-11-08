@@ -74,19 +74,19 @@ void keyPressed() {
         //perform the operation in desired cell according to the key pressed!
         switch(key) {
             //next flavor
-            case'a':
+            case's':
             if (isAllowed("flavors")) cell.switchFlavor(true);
             break;
             //prev flavor
-            case's':
+            case'a':
             if (isAllowed("flavors")) cell.switchFlavor(false);
             break;
             //next shape
-            case'd':
+            case'f':
             if (isAllowed("shapes")) cell.switchShape(true);
             break;
             //prev shape
-            case'f':
+            case'd':
             if (isAllowed("shapes")) cell.switchShape(false);
             break;
         };
