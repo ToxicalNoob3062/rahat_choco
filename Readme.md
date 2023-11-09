@@ -31,13 +31,18 @@ The `ChocoCell` class represents an individual chocolate cell and manages its pr
 
 - `x`, `y`: Coordinates of the cell.
 - `size`: Size of the cell.
-- `flavorId`: Index of the current flavor in respect of flavors.
-- `shapeId`: Index of the current shape in respect of shapes.
+- `flavorId`: Index representing the flavor of chocolate in cell in respect of flavors!.
+- `shapeId`: Index representing the shape of chocolate in cell in respect of shapes!.
 - `visible`: Whether the chocolate inside the cell is visible.
 - `flavors`: Array of flavors shared across all cells.
 - `shapes`: Array of shapes shared across all cells.
 
 ## Interaction 🕹️
+
+- Change the `joystick` variables to make your desired chocolate box grid layout!!
+
+  - Change the `size` function params if you need a larger `box` compared to default size!!
+  - The program will `auto center` your box on the screen!
 
 - Use the keyboard ⌨️ & mouse 🖱️ to interact with the chocolates:
 
