@@ -8,8 +8,8 @@ class ChocoCell{
     public int size;
     
     //properties of chcolate that a cell will contain!
-    public int flavorId = 4;
-    public int shapeId = 3;
+    public int flavorId = 6;
+    public int shapeId = 4;
     public boolean visible = false;
     
     //choices(statically shared arrays)
@@ -53,27 +53,14 @@ class ChocoCell{
     }
     //switches shapes on keyboard events
     public void switchShape(boolean next) {
-        //next shape
-        if (next) {
-            this.shapeId = this.shapeId>= this.shapes.length - 1 ? 0 : this.shapeId + 1;
-        }
-        //prev shape
-        else{
-            this.shapeId = this.shapeId<= 0 ? this.shapes.length - 1 : this.shapeId - 1;
-        }
+        int direction = next ? 1 : - 1;
+        this.shapeId = (this.shapeId + direction + this.shapes.length) % this.shapes.length;
         this.drawCell();
     }
-    
     //switches flavors(colors) on keyboard event
     public void switchFlavor(boolean next) {
-        //next flavor
-        if (next) {
-            this.flavorId = this.flavorId>= this.flavors.length - 1 ? 0 : this.flavorId + 1;
-        }
-        //prev flavor
-        else{
-            this.flavorId = this.flavorId <= 0 ? this.flavors.length - 1 : this.flavorId - 1;
-        }
+        int direction = next ? 1 : - 1;
+        this.flavorId = (this.flavorId + direction + this.flavors.length) % this.flavors.length;
         this.drawCell();
     }
     
