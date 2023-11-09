@@ -21,7 +21,7 @@ String[] shapes = new String[] {
 };
 
 //joystick for changing chocolate box size and shape (these varibales can be changed by user!)
-int cellSize = 80;
+int cellSize = 50;
 int rows = 5;
 int cols = 5;
 

@@ -43,7 +43,7 @@ class ChocoBox {
                 int k = i * this.cols + j; //#linearization of 2D to 1D
                 
                 //fill the index of the chocobox with the choco-cell!
-                this.box[k] = new ChocoCell(x,y,80,this.flavors,this.shapes);
+                this.box[k] = new ChocoCell(x,y,this.cellSize,this.flavors,this.shapes);
             }
         }
     }
